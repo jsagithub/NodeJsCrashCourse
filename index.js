@@ -1,1 +1,3 @@
-console.log("Hello Node");
+const person = require("./person");
+
+console.log(person);
