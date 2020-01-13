@@ -1,6 +1,6 @@
 const os = require("os");
 
-// GEt Operative System
+// Get Operative System
 console.log(os.platform());
 
 //CPU arquitecture
@@ -11,3 +11,9 @@ console.log(os.cpus());
 
 //Free memory
 console.log(os.freemem());
+
+// Home dir
+console.log(os.homedir());
+
+// Uptime
+console.log(os.uptime());
