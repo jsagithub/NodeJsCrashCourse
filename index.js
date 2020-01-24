@@ -66,10 +66,10 @@ const server = http.createServer((req, res) => {
       } else {
         //Some server error
         res.writeHead(500);
-        res.end(`server error`);
+        res.end(`server error:${err.code}`);
       }
     } else {
-      res.writeHead(200, { "Content-Type": "text/html" });
+      res.writeHead(200, { "Content-Type": contentType });
       res.end(content, "utf8");
     }
   });
